@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:before,:after{
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    /*overflow: hidden;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+.cards {
+    min-width: 341px;
+    max-width: 500px;
+}
+
+.card {
+    width: auto;
+    margin: 30px 17px 0 17px;
+    border: 0.3px #828282 solid;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 100%;
+    height: 100%;
+}
+
+.card_promo::after {
+    "";
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    line-height: 20px;
+    padding: 8px 17px;
+    z-index: 1001;
+    font-size: 12px;
+}
+
+.card_promo-new::after {
+    content: "Новинка";
+}
+
+.card_promo-whole-year::after {
+    content: "Круглый год";
+}
+
+.card_promo-yellow::after {
+    background-color: #FED74B;
+}
+
+.card_promo-violet::after {
+    background-color: #7553FF;
+    color: #fff;
+}
+
+.card_promo-blue::after {
+    background-color: #099CE8;
+    color: #fff;
+}
+
+.card-promo-rounded::after {
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+.card-promo-padding::after {
+    top: 41px;
+}
+
+.card_promo-ls::after {
+    padding: 12px 27px;
+    font-size: 14px;
+}
+
+.card__content {
+    padding: 16px 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.card__duration {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    column-gap: 9px;
+    color: #9E9E9E;
+}
+
+.card__title {
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.card__benefits-item {
+    color: #4B4B4B;
+    list-style: url("../img/list-item-icon.svg") outside;
+    margin-left: 20px;
+    padding-left: 20px;
+    /*height: 16px;*/
+    padding-bottom: 16px;
+}
+
+.card__benefits-item:last-child {
+    padding-bottom: 0;
+}
+
+/*.card__benefits-item::marker {*/
+/*    font-size: 1rem;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+.card__benefits-item-text {
+    line-height: 20px;
+    min-width: 226px;
+}
+
+.bg-fill {
+    border-radius: 11px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.bg-fill_blue {
+    background-color: #D9E8FF;
+}
+
+.bg-fill_yellow {
+    background-color: #FED74B;
+}
+
+.card__button {
+    width: 100%;
+    height: 44px;
+    max-width: 165px;
+    border-radius: 20px;
+    border: 1px #CBA500 solid;
+}
+
+.card__time-block {
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 2px 13px;
+    max-width: 61.7px;
+}
+
+.card__benefits-item_timetable-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    column-gap: 4px;
+}
+
+.card__benefits-item_timetable-time-blocks {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 4px;
+    margin-top: 7px;
+    margin-right: 7px;
+}
+
+.card__purchase {
+    width: 309px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7px;
+    margin-top: 19px;
+}
+
+.card__price-online {
+    font-size: 30px;
+    line-height: 23px;
+}
+
+.card__price-on-jetty {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.invisible {
+    display: none;
+}
